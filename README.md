@@ -147,6 +147,15 @@ Rank brokers and agents by motivated seller distress signals. Identifies underpe
 
 ## Getting Started
 
+### Prerequisites
+
+The Parcl Labs MCP requires an active Parcl Labs account on either the **Operator** or **Insider** plan. Both plans include full MCP access.
+
+1. [Create a Parcl Labs account](https://app.parcllabs.com/) if you don't have one
+2. [Upgrade to the Operator or Insider plan](https://app.parcllabs.com/account/subscriptions)
+3. Install the MCP server in your preferred client using one of the methods below
+4. **Authenticate** — the first time your client connects to the MCP, an OAuth prompt will open in your browser asking you to authorize access to your Parcl Labs account. Verify the callback URL, click **Connect**, and you're in
+
 ### Quick Install
 
 Click a button to install the Parcl Labs MCP server in your preferred client:
