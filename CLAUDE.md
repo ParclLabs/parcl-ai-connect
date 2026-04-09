@@ -24,7 +24,7 @@ This repository contains use cases and Claude Code skills for the Parcl Labs MCP
 
 ## Repository Structure
 
-```
+```text
 .claude/skills/          # Claude Code skills (advanced workflows)
 use-cases/               # Use case documentation with basic prompts
   <name>/basic/PROMPT.md # Copy-paste prompt (no setup needed)

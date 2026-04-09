@@ -10,5 +10,15 @@
   // Allow compact table style (pipes without surrounding spaces)
   "MD060": false,
   // Allow bold text as sub-headings inside details blocks
-  "MD036": false
+  "MD036": false,
+  // Skills and prompts use tight list style (no blank line before list)
+  "MD032": false,
+  // Skills use tight heading-to-list style (no blank line after heading)
+  "MD022": false,
+  // Allow multiple top-level headings (reference docs)
+  "MD025": false,
+  // Allow ordered list prefixes matching actual numbers (1. 2. 5.)
+  "MD029": false,
+  // Allow first line to not be a heading (example docs)
+  "MD041": false
 }

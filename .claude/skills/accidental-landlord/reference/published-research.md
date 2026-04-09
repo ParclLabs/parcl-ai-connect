@@ -45,11 +45,11 @@ April 2025 data shows an acceleration in accidental landlord formation across in
 | 5 | Atlanta | 3.2% | +5.2% |
 | 6 | Charlotte | 2.0% | -7.2% |
 
-Historical data indicates accidental landlord formation follows seasonal trends, typically peaking during summer months. Current figures confirm this trend is accelerating. Five of six institutional markets show year-over-year increases heading into summer 2025. 
+Historical data indicates accidental landlord formation follows seasonal trends, typically peaking during summer months. Current figures confirm this trend is accelerating. Five of six institutional markets show year-over-year increases heading into summer 2025.
 
 ### Institutional Market Accidental Landlord Trends
 
-Houston leads with **6.8%** of unsuccessful sellers pivoting to the rental market, up **41.4%** year over year. 
+Houston leads with **6.8%** of unsuccessful sellers pivoting to the rental market, up **41.4%** year over year.
 
 **Chart 3: Houston Metro Accidental Landlord Rate (January 2023 - April 2025)**
 
@@ -57,7 +57,7 @@ Dallas follows at **5.1%**, a **32.3%** YoY jump.
 
 **Chart 4: Dallas Metro Accidental Landlord Rate (January 2023 - April 2025)**
 
-Phoenix and Tampa post double-digit growth but lower absolute shares. 
+Phoenix and Tampa post double-digit growth but lower absolute shares.
 
 **Chart 5: Tampa Metro Accidental Landlord Rate (January 2023 - April 2025)**
 
