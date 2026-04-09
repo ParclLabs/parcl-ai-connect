@@ -22,7 +22,8 @@ Generates a 5-sheet Excel workbook analyzing agent and brokerage performance in 
 Parse the second argument by stripping the letter suffix and converting: `k`/`K` = multiply by 1,000, `m`/`M` = multiply by 1,000,000. If no second argument is provided, default to $2,000,000.
 
 **Examples:**
-```
+
+```bash
 /broker-analytics Hamptons           # Hamptons luxury (>$2M)
 /broker-analytics Houston 500k       # Houston mid-market (>$500K)
 /broker-analytics Tampa all          # Tampa full market (no filter)
@@ -293,7 +294,7 @@ Freeze pane: `A3`. Auto-filter on row 2.
 
 ## Example Usage
 
-```
+```bash
 /broker-analytics Hamptons
 /broker-analytics Beverly Hills
 /broker-analytics Palm Beach
