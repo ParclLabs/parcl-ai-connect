@@ -1,0 +1,14 @@
+{
+  // Disable line length - skills and prompts need long lines
+  "MD013": false,
+  // Allow HTML in markdown (for GIF embeds, comments)
+  "MD033": false,
+  // Allow duplicate headings in different files
+  "MD024": { "siblings_only": true },
+  // Allow trailing punctuation in headings
+  "MD026": false,
+  // Allow compact table style (pipes without surrounding spaces)
+  "MD060": false,
+  // Allow bold text as sub-headings inside details blocks
+  "MD036": false
+}

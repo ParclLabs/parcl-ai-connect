@@ -1,0 +1,89 @@
+name: Lint & Validate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  markdown-lint:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run markdownlint
+        run: npx markdownlint-cli2 '**/*.md' '#node_modules'
+
+  validate-skills:
+    name: Validate Skills
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check skill structure
+        run: |
+          exit_code=0
+          for skill_dir in .claude/skills/*/; do
+            skill_file="$skill_dir/SKILL.md"
+            skill_name=$(basename "$skill_dir")
+
+            # Check SKILL.md exists
+            if [ ! -f "$skill_file" ]; then
+              echo "::error::Missing SKILL.md in $skill_dir"
+              exit_code=1
+              continue
+            fi
+
+            # Check required frontmatter fields
+            if ! grep -q "^name:" "$skill_file"; then
+              echo "::error::Missing 'name:' in $skill_file"
+              exit_code=1
+            fi
+
+            if ! grep -q "^description:" "$skill_file"; then
+              echo "::error::Missing 'description:' in $skill_file"
+              exit_code=1
+            fi
+
+            # Check description length (extract and measure)
+            desc=$(sed -n 's/^description: *//p' "$skill_file" | head -1)
+            if [ ${#desc} -gt 250 ]; then
+              echo "::warning::Description in $skill_file exceeds 250 characters (${#desc})"
+            fi
+
+            echo "  $skill_name: OK"
+          done
+          exit $exit_code
+
+  check-basic-prompts:
+    name: Check Basic Prompts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify PROMPT.md files exist for each use case
+        run: |
+          exit_code=0
+          for use_case_dir in use-cases/*/; do
+            uc_name=$(basename "$use_case_dir")
+
+            # Check README exists
+            if [ ! -f "$use_case_dir/README.md" ]; then
+              echo "::warning::Missing README.md in $use_case_dir"
+            fi
+
+            # Check basic prompt exists (skip if use case is placeholder)
+            if [ -d "$use_case_dir/basic" ] && [ ! -f "$use_case_dir/basic/PROMPT.md" ]; then
+              echo "::warning::Missing basic/PROMPT.md in $use_case_dir"
+            fi
+
+            echo "  $uc_name: checked"
+          done
+          exit $exit_code
