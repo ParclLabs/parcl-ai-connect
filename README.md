@@ -10,7 +10,7 @@ Turn 50,000+ US housing markets of data into actionable dashboards, reports, and
 
 ## How It Works
 
-Parcl AI Connect provides ready-to-use workflows against the [Parcl Labs MCP](https://www.parcllabs.com) server. Every use case comes in two flavors:
+Parcl AI Connect provides ready-to-use workflows against the [Parcl Labs MCP](https://app.parcllabs.com/data-vault/ai-connect) server. Every use case comes in two flavors:
 
 | Level | What It Is | How To Use |
 |-------|-----------|------------|
