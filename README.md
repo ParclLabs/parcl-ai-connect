@@ -49,6 +49,19 @@ Surface portfolio owners using multiple PM companies — high-value consolidatio
 | **Advanced** | `/pm-fragmentation [market]` |
 | **Details** | [Use case docs](use-cases/service-targeting/) |
 
+#### Property Manager Intel
+
+Build a ranked list of rental property managers with scale, geography, and contact info — clearly separating third-party PMs, brokerages, institutional landlords, and listing platforms.
+
+![Property Manager Intel](assets/gifs/pm_intelligence_small.gif)
+
+| | |
+|---|---|
+| **Output** | Four-tab xlsx with PM Profiles (third-party), Brokerages, Institutional Landlords, and Rental Software & Platforms, plus a summary sheet |
+| **Basic** | [Prompt](use-cases/property-manager-intel/basic/PROMPT.md) |
+| **Advanced** | `/property-manager-intel [market or 'national']` |
+| **Details** | [Use case docs](use-cases/property-manager-intel/) |
+
 ---
 
 ### Home Services Targeting
@@ -450,6 +463,7 @@ Skills are automatically discovered by Claude Code from `.claude/skills/`. Run a
 /accidental-landlord Houston
 /competitor-analysis "Investor Name"
 /pm-fragmentation top-10
+/property-manager-intel Phoenix
 /acquisition-targeting "Louisville, Columbus, Memphis"
 /market-study Hamptons
 /broker-analytics "Beverly Hills"
@@ -468,6 +482,7 @@ parcl-ai-connect/
 │       ├── accidental-landlord/   #   Lead gen pipeline
 │       ├── competitor-analysis/   #   Portfolio teardown
 │       ├── pm-fragmentation/      #   PM consolidation scoring
+│       ├── property-manager-intel/#   PM ranked list by market or national
 │       ├── acquisition-targeting/ #   Disposition signal detection
 │       ├── market-study/          #   Institutional-grade PDF reports
 │       ├── broker-analytics/      #   Agent/brokerage distress rankings
@@ -477,6 +492,7 @@ parcl-ai-connect/
 │   ├── accidental-landlord/
 │   ├── competitive-landscape/
 │   ├── service-targeting/
+│   ├── property-manager-intel/
 │   ├── underwriting/
 │   ├── market-study/
 │   ├── agent-analytics/
