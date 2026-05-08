@@ -14,7 +14,7 @@ Output: xlsx with four tabs:
     - Brokerages                         : brokerage category (separate — not silently ranked as PMs)
     - Institutional Landlords            : institutional_landlord category
     - Rental Software & Platforms        : rental_software category (Zumper,
-                                           AppFolio, Zillow, etc. — visible as
+                                           AppFolio, etc. — visible as
                                            leasing-activity surface, not PMs)
 
 Each tab has autofilter + frozen header row. No formulas.

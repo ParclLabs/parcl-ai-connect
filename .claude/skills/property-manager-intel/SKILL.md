@@ -33,8 +33,8 @@ on separate tabs.
 - **Institutional Landlords** — Invitation Homes, American Homes 4 Rent,
   Progress Residential, FirstKey, Tricon, and similar SFR operators that
   manage their own portfolios.
-- **Rental Software & Platforms** — Zumper, AppFolio, Zillow, ShowMojo,
-  and similar listing platforms and PM software. Visible as a separate
+- **Rental Software & Platforms** — Zumper, AppFolio, ShowMojo, and
+  similar listing platforms and PM software. Visible as a separate
   leasing-activity surface rather than ranked alongside PMs.
 
 ## Workflow
@@ -115,23 +115,7 @@ If `uv` is unavailable, the scripts also work with a plain
 `openpyxl` are importable from the active Python. No behavior
 difference — the PEP 723 metadata is inert to the Python interpreter.
 
-### 4. Clean up intermediate artifacts
-
-Only the final xlsx is user-facing. After `build_spreadsheet.py` finishes
-successfully, delete every intermediate CSV from `pm_workspace/` so the
-directory contains only `pm_list.xlsx`:
-
-```bash
-rm -f ../pm_workspace/listings.csv \
-      ../pm_workspace/resolved.csv \
-      ../pm_workspace/deduped.csv \
-      ../pm_workspace/profiles.csv
-```
-
-Do NOT delete anything if any upstream script errored — keep the
-intermediates so you can inspect where the pipeline broke.
-
-### 5. Deliver
+### 4. Deliver
 
 Give the user:
 - The xlsx file path.
@@ -225,7 +209,7 @@ A few things worth keeping in mind when working with the delivered xlsx:
    distinct signal from the PM Profiles tab.
 
 3. **The Rental Software & Platforms tab is a leasing-activity
-   surface, not a PM directory.** Zumper, AppFolio, Zillow, and similar
+   surface, not a PM directory.** Zumper, AppFolio, and similar
    services appear here because their users list rentals through them.
    These are platforms facilitating listings, not property managers —
    the tab is here so the activity is visible without being ranked

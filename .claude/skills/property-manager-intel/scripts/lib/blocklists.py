@@ -20,7 +20,6 @@ RENTAL_SOFTWARE: set[str] = {
     "rent engine",
     "tenantturner",
     "tenant turner",
-    "zillow",
     "gmail",
     "yahoo",
     "hotmail",
@@ -30,25 +29,9 @@ RENTAL_SOFTWARE: set[str] = {
     "aol com",
     "icloud",
     "cloudmailin",
-    "regionalmls",
-    "mlsnow",
-    "mls now",
-    "mlsmatrix",
-    "arizonaregionalmls",
-    "arizona regional mls",
-    "stellarmls",
-    "stellar mls",
-    "mlslistings",
-    "mls listings",
-    "brightmls",
-    "bright mls",
     "mris",
     "ntreis",
-    "unlockmls",
-    "unlock mls",
     "bloomington board of realtors",
-    "doorifymls",
-    "doorify mls",
 }
 
 
@@ -109,7 +92,6 @@ BROKERAGES: set[str] = {
     "lokation",
     "corcoran group",
     "the corcoran group",
-    "redfin",
 }
 
 
