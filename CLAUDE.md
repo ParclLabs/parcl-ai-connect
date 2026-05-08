@@ -16,6 +16,7 @@ This repository contains use cases and Claude Code skills for the Parcl Labs MCP
 | Accidental Landlord | `/accidental-landlord [market]` | Lead gen pipeline for failed sellers who pivoted to renting |
 | Competitor Analysis | `/competitor-analysis [investor]` | 8-tab portfolio teardown of any institutional SFR investor |
 | PM Fragmentation | `/pm-fragmentation [market]` | PM consolidation opportunity scoring across portfolios |
+| Property Manager Intel | `/property-manager-intel [market or 'national']` | Ranked PM list separating third-party PMs, brokerages, institutional landlords, and platforms |
 | Acquisition Targeting | `/acquisition-targeting [markets]` | Disposition signal detection for bulk acquisition targets |
 | Market Study | `/market-study [market]` | Institutional-grade PDF with KPI matrices and supply-demand analysis |
 | Broker Analytics | `/broker-analytics [market]` | Agent/brokerage performance ranked by motivated seller distress signals |
