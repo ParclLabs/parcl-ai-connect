@@ -118,9 +118,9 @@ Identify SFR portfolios showing disposition signals as bulk acquisition targets 
 | | |
 |---|---|
 | **Output** | HTML dashboard with portfolio cards scored by criteria match, buy box analysis, for-sale listings with agent contact info |
-| **Basic** | [Prompt](use-cases/underwriting/basic/PROMPT.md) |
+| **Basic** | [Prompt](use-cases/acquisition-targeting/basic/PROMPT.md) |
 | **Advanced** | `/acquisition-targeting [markets]` |
-| **Details** | [Use case docs](use-cases/underwriting/) |
+| **Details** | [Use case docs](use-cases/acquisition-targeting/) |
 
 ---
 
