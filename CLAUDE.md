@@ -18,6 +18,7 @@ This repository contains use cases and Claude Code skills for the Parcl Labs MCP
 | PM Fragmentation | `/pm-fragmentation [market]` | PM consolidation opportunity scoring across portfolios |
 | Property Manager Intel | `/property-manager-intel [market or 'national']` | Ranked PM list separating third-party PMs, brokerages, institutional landlords, and platforms |
 | Acquisition Targeting | `/acquisition-targeting [markets]` | Disposition signal detection for bulk acquisition targets |
+| Property Underwriter | `/property-underwriter [address]` | Lender-grade underwriting report with imputed value, comps, and gross yield for any US residential address |
 | Market Study | `/market-study [market]` | Institutional-grade PDF with KPI matrices and supply-demand analysis |
 | Broker Analytics | `/broker-analytics [market]` | Agent/brokerage performance ranked by motivated seller distress signals |
 | HVAC Direct Mail | `/hvac-direct-mail [market]` | Direct mail target list with route-optimized delivery zones for HVAC outreach |

@@ -28,3 +28,7 @@ tests/outputs/
 
 # Cursor/Claude agent worktrees
 .claude/worktrees/
+
+# Python
+__pycache__/
+*.pyc
