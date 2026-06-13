@@ -1,4 +1,4 @@
-# Underwriting: Portfolio Acquisition Targeting
+# Portfolio Acquisition Targeting
 
 Identify SFR portfolios showing disposition signals as bulk acquisition targets. Uses progressive filter relaxation to find candidates even in smaller secondary markets where perfect matches are rare.
 

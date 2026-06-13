@@ -25,3 +25,10 @@ tests/outputs/
 
 # Claude Code local settings
 .claude/settings.local.json
+
+# Cursor/Claude agent worktrees
+.claude/worktrees/
+
+# Python
+__pycache__/
+*.pyc

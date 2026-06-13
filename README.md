@@ -118,9 +118,22 @@ Identify SFR portfolios showing disposition signals as bulk acquisition targets 
 | | |
 |---|---|
 | **Output** | HTML dashboard with portfolio cards scored by criteria match, buy box analysis, for-sale listings with agent contact info |
-| **Basic** | [Prompt](use-cases/underwriting/basic/PROMPT.md) |
+| **Basic** | [Prompt](use-cases/acquisition-targeting/basic/PROMPT.md) |
 | **Advanced** | `/acquisition-targeting [markets]` |
-| **Details** | [Use case docs](use-cases/underwriting/) |
+| **Details** | [Use case docs](use-cases/acquisition-targeting/) |
+
+#### Property Underwriter
+
+Generate a lender-grade underwriting report for any US residential address — imputed current value, 3-mile sale and rental comps, gross yield, and risk notes.
+
+![Property Underwriter](assets/gifs/underwriting_small.gif)
+
+| | |
+|---|---|
+| **Output** | Dark-themed HTML report with imputed value, price index trend, comp distribution, rental comps, and methodology/risk notes |
+| **Basic** | [Prompt](use-cases/property-underwriter/basic/PROMPT.md) |
+| **Advanced** | `/property-underwriter [address]` |
+| **Details** | [Use case docs](use-cases/property-underwriter/) |
 
 ---
 
@@ -465,6 +478,7 @@ Skills are automatically discovered by Claude Code from `.claude/skills/`. Run a
 /pm-fragmentation top-10
 /property-manager-intel Phoenix
 /acquisition-targeting "Louisville, Columbus, Memphis"
+/property-underwriter "1097 Greenbriar Rd, Bethel Park, PA 15102"
 /market-study Hamptons
 /broker-analytics "Beverly Hills"
 /hvac-direct-mail Houston
@@ -484,6 +498,7 @@ parcl-ai-connect/
 │       ├── pm-fragmentation/      #   PM consolidation scoring
 │       ├── property-manager-intel/#   PM ranked list by market or national
 │       ├── acquisition-targeting/ #   Disposition signal detection
+│       ├── property-underwriter/  #   Lender-grade underwriting reports
 │       ├── market-study/          #   Institutional-grade PDF reports
 │       ├── broker-analytics/      #   Agent/brokerage distress rankings
 │       ├── hvac-direct-mail/      #   HVAC direct mail targeting
@@ -493,7 +508,8 @@ parcl-ai-connect/
 │   ├── competitive-landscape/
 │   ├── service-targeting/
 │   ├── property-manager-intel/
-│   ├── underwriting/
+│   ├── acquisition-targeting/
+│   ├── property-underwriter/
 │   ├── market-study/
 │   ├── agent-analytics/
 │   ├── hvac-direct-mail/
